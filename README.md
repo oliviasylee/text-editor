@@ -1,1 +1,1 @@
-# text-editor
+# Text Editor
