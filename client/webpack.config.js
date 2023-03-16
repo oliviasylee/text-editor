@@ -57,7 +57,7 @@ module.exports = () => {
         {
           test: /\.m?js$/,
           exclude: /(node_modules|bower_components)/,
-          use: { //Setup to convert ES6+ code to ES5 and earlier versions
+          use: { // Setup to convert ES6+ code to ES5 and earlier versions
             loader: "babel-loader",
             options: {
               presets: ["@babel/preset-env"],
