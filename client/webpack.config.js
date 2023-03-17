@@ -21,16 +21,18 @@ module.exports = () => {
         title: 'JATE Text-editor'
       }),
       new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
         name: 'JATE Text-editor',
         short_name: 'JATE',
         description: 'Create a note or code snippet!',
-        background_color: '#7eb4e2',
-        theme_color: '#7eb4e2',
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
         start_url: './',
         publicPath: './',
         icons: [
           {
-            src: path.resolve('assets/images/logo.png'),
+            src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join('assets', 'icons'),
           },
@@ -38,13 +40,14 @@ module.exports = () => {
       }),
       // Let Webpack know it's service worker
       new InjectManifest({ 
-        swSrc: './src/sw.js', // My own service worker code
-        swDest: 'service-worker.js',
+        swSrc: './src-sw.js', // My own service worker code
+        swDest: 'src-sw.js',
       }), 
 
     ],
 // TODO: Add CSS loaders and babel to webpack.
     module: {
+      // CSS loaders
       rules: [
         {
           test: /\.css$/i,
@@ -57,10 +60,11 @@ module.exports = () => {
         {
           test: /\.m?js$/,
           exclude: /(node_modules|bower_components)/,
-          use: { // Setup to convert ES6+ code to ES5 and earlier versions
+          use: { // Use babel-loader in order to use ES6.
             loader: "babel-loader",
             options: {
               presets: ["@babel/preset-env"],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
             },
           },
         },
