@@ -29,7 +29,7 @@ registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
 // Implement asset caching
 registerRoute(
-  // Register route for assets - style, script, and worke
+  // Register route for assets - style, script, and worker
   ({ request }) => ['style', 'script', 'worker'].includes(request.destination),
   // Use a StaleWhileRevalidate strategy to cache and serve assets
   new StaleWhileRevalidate({

@@ -38,9 +38,9 @@ module.exports = () => {
           },
         ],
       }),
-      // Let Webpack know it's service worker
+      // It lets Webpack know it's a service worker
       new InjectManifest({ 
-        swSrc: './src-sw.js', // My own service worker code
+        swSrc: './src-sw.js', // My own service worker
         swDest: 'src-sw.js',
       }), 
 
@@ -55,8 +55,8 @@ module.exports = () => {
         {
           test: /\.m?js$/,
           exclude: /(node_modules|bower_components)/,
-          use: { // Use babel-loader in order to use ES6.
-            loader: "babel-loader",
+          use: { 
+            loader: "babel-loader", // Use babel-loader in order to use ES6
             options: {
               presets: ["@babel/preset-env"],
               plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],

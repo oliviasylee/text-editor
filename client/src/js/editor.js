@@ -10,11 +10,10 @@ export default class {
     if (typeof CodeMirror === 'undefined') {
       throw new Error('CodeMirror is not loaded');
     }
-    // Change CodeMirror Theme to duotone-light
     this.editor = CodeMirror(document.querySelector('#main'), {
       value: '',
       mode: 'javascript',
-      theme: 'duotone-light',
+      theme: 'duotone-light', // Change CodeMirror Theme to duotone-light
       lineNumbers: true,
       lineWrapping: true,
       autofocus: true,
