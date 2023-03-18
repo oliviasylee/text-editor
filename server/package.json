@@ -1,14 +1,14 @@
 {
-    "name": "JATE",
+    "name": "Write Now! Text Editor",
     "version": "1.0.0",
-    "description": "",
+    "description": "Stop thinking! Write now your a note or a code snippet!",
     "main": "server.js",
     "scripts": {
         "server": "nodemon server.js --ignore client"
     },
     "keywords": [],
     "author": "",
-    "license": "ISC",
+    "license": "MIT",
     "dependencies": {
         "express": "^4.17.1"
     },
