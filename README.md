@@ -13,7 +13,7 @@ Write Now! is a text editor that runs on the browser. It allows users to create 
 ## Installation
 - To use the application on your local machine, download or clone the repository. After navigating to the root directory, run the command "npm i" to install the necessary dependencies. To start your application, run 'npm run start:dev' and 'npm start'.
 
-- Follow [this link](https://wnte-oslee.herokuapp.com/) and click the Install button to use it like a native app on your desktop. 
+- Follow [this link](https://wnte-oslee.herokuapp.com/) and click the Install button to use it like a native app on your pc. 
 
 ## Usage
 Live HEROKU application deployed at: [Click here](https://wnte-oslee.herokuapp.com/) <br> <br>
