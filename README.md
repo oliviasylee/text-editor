@@ -58,7 +58,7 @@ Live HEROKU application deployed at: [Click here](https://wnte-oslee.herokuapp.c
 - JavaScript
 - Express.js
 - Node.js
-- Webpack: module bundler, Manifest
+- Webpack: Module bundler, Manifest
 - Workbox: Service Worker, Cache
 - IndexDB
 
