@@ -6,7 +6,7 @@ Write Now! is a text editor that runs on the browser. It allows users to create 
 ## Table of Contents
 - [Installation](#Installation)
 - [Usage](#Usage)
-- [Application Preview](#ApplicationPreview)
+- [Application Preview](#Application-preview)
 - [Technologies](#Technologies)
 - [Questions](#Questions)
 
