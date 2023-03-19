@@ -6,7 +6,7 @@ Write Now! is a text editor that runs on the browser. It allows users to create 
 ## Table of Contents
 - [Installation](#Installation)
 - [Usage](#Usage)
-- [Application Preview](#Applicationpreview)
+- [Application Preview](#ApplicationPreview)
 - [Technologies](#Technologies)
 - [Questions](#Questions)
 
@@ -28,6 +28,7 @@ Live HEROKU application deployed at: [Click here](https://wnte-oslee.herokuapp.c
 | ![manifest](/assets/03-manifest.png)|
 
 | Service Worker |
+|----------------------|
 | By caching the application's files, users can still use the application even when offline. |
 | ![sw](/assets/04-sw.png)|
 
@@ -37,14 +38,17 @@ Live HEROKU application deployed at: [Click here](https://wnte-oslee.herokuapp.c
 | ![indexDB](/assets/05-indexDB.png)|
 
 | Asset Cache |
+|----------------------|
 | Caching style, script, and worker files can improve the performance of the application. |
 | ![assetcache](/assets/06-asset-cache.png)|
 
 | Install |
+|----------------------|
 | When users click "install," the application will be added to the home screen. |
 | ![install](/assets/07-install.png)|
 
 | Add to Home screen|
+|----------------------|
 | It can be used on the desktop as if it were a native application. |
 | ![addtohomescreen](/assets/08-addtohomescreen.png)|
 
