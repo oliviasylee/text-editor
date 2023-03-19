@@ -2,7 +2,7 @@
 ## Description
 ![logo](./client/dist/assets/icons/icon_256x256.png) <br>
 
-Write Now! is a text editor that runs on the browser. It allows users to create notes or code snippets and retrieve them when the application is reopened. By clicking the "Install" button, this text editor can be installed on the desktop and used as if it were a native application. The application also works offline, allowing users to continue using it even when they don't have an internet connection.
+Write Now! is a Progressive Web App (PWA) that runs on the browser. It allows users to create notes or code snippets and retrieve them when the application is reopened. By clicking the "Install" button, the application can be installed on a PC or mobile device and used as if it were a native application. The application is implemented a PWA using technologies such as Service Worker, Manifest, Cache API, and IndexedDB, which also allow the application to work offline. In addition, the app provides features such as Add to Home Screen, making it easy to access and use.
 ## Table of Contents
 - [Installation](#Installation)
 - [Usage](#Usage)
@@ -11,9 +11,9 @@ Write Now! is a text editor that runs on the browser. It allows users to create 
 - [Questions](#Questions)
 
 ## Installation
-- To use the application on your local machine, download or clone the repository. After navigating to the root directory, run the command "npm i" to install the necessary dependencies. To start your application, run 'npm run start:dev' and 'npm start'.
+- To use the application on your local machine, download or clone the repository. After navigating to the root directory, run the command 'npm i' to install the necessary dependencies. To start your application, run 'npm run start:dev' and 'npm start'.
 
-- Follow [this link](https://wnte-oslee.herokuapp.com/) and click the Install button to use it like a native app on your pc. 
+- Follow [this link](https://wnte-oslee.herokuapp.com/) and click the Install button on your pc or mobile.
 
 ## Usage
 Live HEROKU application deployed at: [Click here](https://wnte-oslee.herokuapp.com/) <br> <br>
@@ -44,12 +44,12 @@ Live HEROKU application deployed at: [Click here](https://wnte-oslee.herokuapp.c
 
 | Install |
 |----------------------|
-| When users click "install," the application will be added to the home screen. |
+| When users click the Install button, the application will be added to the home screen. |
 | ![install](/assets/07-install.png)|
 
 | Add to Home screen|
 |----------------------|
-| It can be used on the desktop as if it were a native application. |
+| It can be used on the pc or mobile as if it were a native application. |
 | ![addtohomescreen](/assets/08-addtohomescreen.png)|
 
 ## Technologies
